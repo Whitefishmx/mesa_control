@@ -1,0 +1,409 @@
+INFO - 2024-07-29 19:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 20:00:20 --> CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL "consulta.solveshop.local/" is not a valid URL.
+in SYSTEMPATH/HTTP/SiteURI.php on line 199.
+ 1 SYSTEMPATH/HTTP/SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL()
+ 2 SYSTEMPATH/HTTP/SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL()
+ 3 SYSTEMPATH/HTTP/SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct()
+ 4 SYSTEMPATH/HTTP/SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath()
+ 5 SYSTEMPATH/Config/Services.php(805): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+ 6 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::uri()
+ 7 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+ 8 SYSTEMPATH/Config/Services.php(798): CodeIgniter\Config\BaseService::getSharedInstance()
+ 9 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::uri()
+10 SYSTEMPATH/Config/Services.php(566): CodeIgniter\Config\BaseService::__callStatic()
+11 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest()
+12 SYSTEMPATH/Config/Services.php(524): CodeIgniter\Config\BaseService::__callStatic()
+13 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::request()
+14 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+15 SYSTEMPATH/Config/Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance()
+16 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest()
+17 SYSTEMPATH/Config/Services.php(539): CodeIgniter\Config\BaseService::__callStatic()
+18 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::createRequest()
+19 SYSTEMPATH/CodeIgniter.php(656): CodeIgniter\Config\BaseService::__callStatic()
+20 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+21 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-29 20:00:20 --> ErrorException: Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL "consulta.solveshop.local/" is not a valid URL. in /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/HTTP/SiteURI.php:199
+Stack trace:
+#0 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/HTTP/SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL()
+#1 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/HTTP/SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL()
+#2 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/HTTP/SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct()
+#3 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/HTTP/SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath()
+#4 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/Services.php(805): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/BaseService.php(258): CodeIgniter\Config\Services::uri()
+#6 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#7 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/Services.php(798): CodeIgniter\Config\BaseService::getSharedInstance()
+#8 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/Services.php(566): CodeIgniter\Config\BaseService::__callStatic()
+#10 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest()
+#11 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/Services.php(524): CodeIgniter\Config\BaseService::__callStatic()
+#12 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/BaseService.php(258): CodeIgniter\Config\Services::request()
+#13 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#14 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance()
+#15 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Debug/Exceptions.php(150): CodeIgniter\Config\BaseService::__callStatic()
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL "consulta.solveshop.local/" is not a valid URL.
+#0 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/HTTP/SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL()
+#1 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/HTTP/SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL()
+#2 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/HTTP/SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct()
+#3 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/HTTP/SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath()
+#4 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/Services.php(805): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/BaseService.php(258): CodeIgniter\Config\Services::uri()
+#6 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#7 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/Services.php(798): CodeIgniter\Config\BaseService::getSharedInstance()
+#8 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/Services.php(566): CodeIgniter\Config\BaseService::__callStatic()
+#10 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest()
+#11 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/Services.php(524): CodeIgniter\Config\BaseService::__callStatic()
+#12 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/BaseService.php(258): CodeIgniter\Config\Services::request()
+#13 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#14 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance()
+#15 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest()
+#16 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/Services.php(539): CodeIgniter\Config\BaseService::__callStatic()
+#17 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Config/BaseService.php(258): CodeIgniter\Config\Services::createRequest()
+#18 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(656): CodeIgniter\Config\BaseService::__callStatic()
+#19 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#20 /var/www/consulta_blue_bull/index.php(79): CodeIgniter\CodeIgniter->run()
+#21 {main}
+in SYSTEMPATH/HTTP/SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-07-29 20:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 20:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 20:00:42 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'bluebull_jarvis'@'localhost' (using password: YES) in /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/consulta_blue_bull/app/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/consulta_blue_bull/app/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+#5 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+#6 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/consulta_blue_bull/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/consulta_blue_bull/app/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/consulta_blue_bull/app/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+#4 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+#5 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/consulta_blue_bull/index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-07-29 20:00:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-29 20:00:43 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'bluebull_jarvis'@'localhost' (using password: YES) in /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/consulta_blue_bull/app/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/consulta_blue_bull/app/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+#5 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+#6 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/consulta_blue_bull/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/consulta_blue_bull/app/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/consulta_blue_bull/app/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+#4 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+#5 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/consulta_blue_bull/index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-07-29 20:00:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-29 20:00:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'bluebull_jarvis'@'localhost' (using password: YES) in /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/consulta_blue_bull/app/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/consulta_blue_bull/app/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+#5 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+#6 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/consulta_blue_bull/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/consulta_blue_bull/app/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/consulta_blue_bull/app/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+#4 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+#5 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/consulta_blue_bull/index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-07-29 20:00:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-29 21:16:46 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'bluebull_jarvis'@'localhost' (using password: YES) in /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/consulta_blue_bull/app/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/consulta_blue_bull/app/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+#5 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+#6 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/consulta_blue_bull/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/consulta_blue_bull/app/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/consulta_blue_bull/app/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+#4 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+#5 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/consulta_blue_bull/index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-07-29 21:16:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-29 21:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 22:08:05 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'bluebull_jarvis'@'localhost' (using password: YES) in /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/consulta_blue_bull/app/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/consulta_blue_bull/app/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+#5 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+#6 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/consulta_blue_bull/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/consulta_blue_bull/app/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/consulta_blue_bull/app/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+#4 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+#5 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/consulta_blue_bull/index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-07-29 22:08:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-29 22:08:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'bluebull_jarvis'@'localhost' (using password: YES) in /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/consulta_blue_bull/app/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/consulta_blue_bull/app/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+#5 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+#6 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/consulta_blue_bull/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/consulta_blue_bull/app/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/consulta_blue_bull/app/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+#4 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+#5 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/consulta_blue_bull/index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-07-29 22:08:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-29 22:08:38 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'bluebull_jarvis'@'localhost' (using password: YES) in /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/consulta_blue_bull/app/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/consulta_blue_bull/app/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+#5 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+#6 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/consulta_blue_bull/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/consulta_blue_bull/app/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/consulta_blue_bull/app/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+#4 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+#5 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/consulta_blue_bull/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/consulta_blue_bull/index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-07-29 22:08:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Controllers/SigninController.php(24): App\Models\UserModel->validateAccess()
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\SigninController->signIn()
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-29 22:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 22:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 22:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 22:47:48 --> ErrorException: Undefined array key "letter"
+in APPPATH/Controllers/BlueBullController.php on line 26.
+ 1 APPPATH/Controllers/BlueBullController.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\BlueBullController->searchRfc()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-29 22:47:55 --> ErrorException: Undefined array key "letter"
+in APPPATH/Controllers/BlueBullController.php on line 26.
+ 1 APPPATH/Controllers/BlueBullController.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\BlueBullController->searchRfc()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-29 22:49:27 --> ErrorException: Undefined array key "letter"
+in APPPATH/Controllers/BlueBullController.php on line 26.
+ 1 APPPATH/Controllers/BlueBullController.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\BlueBullController->searchRfc()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-29 22:49:43 --> ErrorException: Undefined array key "letter"
+in APPPATH/Controllers/BlueBullController.php on line 33.
+ 1 APPPATH/Controllers/BlueBullController.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\BlueBullController->searchRfc()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-29 22:52:30 --> ErrorException: Undefined array key "rfc"
+in APPPATH/Models/BlueBullModel.php on line 20.
+ 1 APPPATH/Models/BlueBullModel.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/BlueBullController.php(42): App\Models\BlueBullModel->consultaFichas()
+ 3 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\BlueBullController->searchRfc()
+ 4 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-29 22:52:43 --> ErrorException: Undefined array key "rfc"
+in APPPATH/Models/BlueBullModel.php on line 20.
+ 1 APPPATH/Models/BlueBullModel.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/BlueBullController.php(42): App\Models\BlueBullModel->consultaFichas()
+ 3 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\BlueBullController->searchRfc()
+ 4 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-29 22:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 23:27:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "plantilla.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/BlueBullController.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\BlueBullController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-29 23:28:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:28:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 23:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
