@@ -16,7 +16,7 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public string $baseURL = 'http://mesa-control.local';
+    public string $baseURL = 'https://mesa-control.local';
 //	public string $baseURL = 'https://consulta.solveshop.local/';
 
     /**

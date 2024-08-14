@@ -50,10 +50,10 @@
 		public array $tests = [
 			'DSN'         => '',
 			'hostname'    => '127.0.0.1',
-			'username'    => '',
-			'password'    => '',
-			'database'    => ':memory:',
-			'DBDriver'    => 'SQLite3',
+			'username'    => 'bluebull_jarvis',
+			'password'    => 'BLu3BUll24',
+			'database'    => 'bluebull_sandbox',
+			'DBDriver'    => 'MySQLi',
 			'DBPrefix'    => 'db_',
 			// Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
 			'pConnect'    => FALSE,
