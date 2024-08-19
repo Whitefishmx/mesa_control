@@ -43,6 +43,6 @@
 			$input = $this->getRequestInput ( $this->request );
 			$this->environment ( $input );
 			createLog ( "formularios", json_encode ( $input ) );
-//			return redirect()->to ( "displayForm/{$input['origen']}", 301,'location'  );
+			return redirect()->to ( "displayForm/{$input['origen']}", 301,'location'  );
 		}
 	}
