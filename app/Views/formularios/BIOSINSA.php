@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/assets/css/formularios.css" type="text/css">
-<form action="https://mesa-control.local/saveForm" method="post">
+<form action="https://mesa-control.solveshop.xyz/saveForm" method="post">
 	<input type="hidden" name="origen" value="17">
 	<input type="hidden" name="environment" id="environment" value="SANDBOX">
 	<div class="formulario">
