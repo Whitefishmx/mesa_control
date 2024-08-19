@@ -196,16 +196,16 @@
 			<span><strong>Selecciona la empresa en la que trabajas</strong></span>
 			<label for="empresa">
 				<select name="empresa" id="empresa" required>
-																																																																																							<option value="0">Selecciona</option>
-																																																																																							<option value="17">BIOSINSA</option>
-																																																																																							<option value="16">ESTADO DE QUINTANA ROO</option>
-																																																																																							<option value="21">ESTADO DE SONORA</option>
-																																																																																							<option value="11">INDUSTRIAS CAZEL</option>
-																																																																																							<option value="9">MUNICIPIO DE AHOME</option>
-																																																																																							<option value="1">MUNICIPIO DE DURANGO</option>
-																																																																																							<option value="12">SEED DURANGO</option>
-																																																																																							<option value="20">TRANSPORTES CAZEL</option>
-																																																																																							<option value="0">Otra</option>
+					<option value="0">Selecciona</option>
+					<option value="17">BIOSINSA</option>
+					<option value="16">ESTADO DE QUINTANA ROO</option>
+					<option value="21">ESTADO DE SONORA</option>
+					<option value="11">INDUSTRIAS CAZEL</option>
+					<option value="9">MUNICIPIO DE AHOME</option>
+					<option value="1">MUNICIPIO DE DURANGO</option>
+					<option value="12">SEED DURANGO</option>
+					<option value="20">TRANSPORTES CAZEL</option>
+					<option value="0">Otra</option>
 					<!--	--><?php
 						/*				include ( '../conexion.php' );
 										$ResEmpresas = mysqli_query ( $conn, "SELECT Id, Nombre FROM empresas WHERE Simulador = 1 ORDER BY Nombre ASC" );
@@ -221,6 +221,7 @@
 	<div id="divFrame" style="display: none">
 		<iframe id="formularioFrame" name="formularioFrame" style="width: 100%;"></iframe>
 	</div>
+	
 </form>
 <script>
 	$(document).ready(function () {
@@ -279,7 +280,7 @@
 			vPlazos.html(plazo.val());
 			calculo_total(cantidad.val(), value);
 		});
-		$('#empresa').on('change', function(){
+		$("#empresa").on("change", function () {
 			console.log(this.value);
 		});
 	});
