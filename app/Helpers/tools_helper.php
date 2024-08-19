@@ -35,7 +35,7 @@
 	 * @return bool
 	 */
 	function createLog ( string $logName, string $message ): bool {
-		$logDir = 'logs/';
+		$logDir = './logs/';
 		$logFile = fopen ( $logDir . $logName . '.log', 'a+' );
 		if ( $logFile !== FALSE ) {
 			$logMessage = '|' . date ( 'Y-m-d H:i:s' ) . '|   ' . $message . "\r\n";
