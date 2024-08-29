@@ -43,13 +43,7 @@
 			createLog ( "formularios", json_encode ( $input ) );
 			return redirect ()->to ( "displayForm/{$input['origen']}", 301, 'location' );
 		}
-		
 		public function alone (): string|RedirectResponse {
-			if ( $this->validateSession () ) {
-				return view ( 'simuladorAlone', [ 'session' => TRUE, 'title' => 'Simulador' ] );
-				/*$data = [ 'main' => view ( 'simulador', [ 'session' => TRUE ] ), 'title' => 'Simulador' ];
-				return view ( 'plantilla', $data );*/
-			}
-			return redirect ()->route ( 'signin' );
+			return view ( 'simuladorAlone', [ 'session' => TRUE, 'title' => 'Simulador' ] );
 		}
 	}
