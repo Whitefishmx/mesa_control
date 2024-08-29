@@ -45,27 +45,27 @@
         min-width: 200px;
         max-width: 640px;
         width: 80%;
-        height: 10px;
+        height: 23px;
         background-size: 0 100% !important;
         border-radius: 15px;
         background: rgba(255, 255, 255, 0.73) linear-gradient(#78a6ff, #0658f6) no-repeat;
-        padding: 1px;
+        padding: 0;
         border: 1px solid #0658f6;
     }
 
     .rangeInput::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
-        width: 25px;
-        height: 25px;
+        width: 35px;
+        height: 35px;
         border-radius: 50%;
         background: radial-gradient(at top left, #0658f6 20%, #0658f6);
         cursor: pointer;
     }
 
     .rangeInput::-moz-range-thumb {
-        width: 25px;
-        height: 25px;
+        width: 35px;
+        height: 35px;
         border-radius: 50%;
         background: radial-gradient(at top left, #84afff 20%, #0658f6);
         cursor: pointer;
@@ -116,10 +116,15 @@
     }
 
     div h1 {
-        font-size: 16px;
+        font-size: 2vw;
         font-family: poppins;
         color: #ffffff;
         margin: 14px 0;
+    }
+    div p{
+        font-size: 1.5vw;
+        font-family: poppins;
+        color: #ffffff;
     }
 
     .totales {
@@ -158,7 +163,7 @@
 		</div>
 	</div>
 	<!-- Rango plazo -->
-	<div style="display: block; width: 100%; text-align: center;" id="plazo">
+	<div style="display: block; width: 100%; text-align: center; margin-top: 10px" id="plazo">
 		<div>
 			<output id="outMyPlazo" class="dinero" style="font-size: 24px;">12 Quincenas</output>
 		</div>
@@ -173,8 +178,8 @@
 	<!-- Recuadro de información -->
 	<div
 			style="display: flex; width: 90%; text-align: center; background-color: #0658f6; flex-direction: column;
-			 margin: 15px auto; border: 0 solid black; color: #ffffff; font-weight: bold; font-family: poppins;
-			 border-radius: 15px;">
+			 margin: 25px auto; border: 0 solid black; color: #ffffff; font-weight: bold; font-family: poppins;
+			 border-radius: 15px; ">
 		<div style="display: flex">
 			<div class="totales">
 				<h1>Total a pagar*</h1>
