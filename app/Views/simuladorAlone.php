@@ -1,8 +1,14 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 <script>
 	let p = "Q";
 	const vPlazos = $("#plazos");
+	
 	function calculo_total(cantidad, plazo) {
 		let pay;
 		const total = cantidad * 1.48;
@@ -16,7 +22,7 @@
 		} else if (p === "S") {
 			pay = "Semanal";
 		}
-		vPlazos.html(plazo);
+		$("#plazos").html(plazo);
 		$("#pagos").html("<h1>Pago " + pay + "</h1><p>$ " + Intl.NumberFormat("es-MX", {
 			minimumFractionDigits: 2,
 			maximumFractionDigits: 2
@@ -26,7 +32,7 @@
 <link rel="stylesheet" href="/assets/css/formularios.css" type="text/css">
 <style>
     .dinero {
-        font-family: sans-serif;
+        font-family: poppins;
         font-weight: bold;
         font-size: 30px;
         margin: 0 0 14px;
@@ -42,8 +48,9 @@
         height: 10px;
         background-size: 0 100% !important;
         border-radius: 15px;
-        background: rgba(25, 220, 232, 0.6) linear-gradient(#2cbcf0, #146f90) no-repeat;
-	    padding: 1px;
+        background: rgba(255, 255, 255, 0.73) linear-gradient(#78a6ff, #0658f6) no-repeat;
+        padding: 1px;
+        border: 1px solid #0658f6;
     }
 
     .rangeInput::-webkit-slider-thumb {
@@ -52,7 +59,7 @@
         width: 25px;
         height: 25px;
         border-radius: 50%;
-        background: radial-gradient(at top left, #2cbcf0 20%, #0a2240);
+        background: radial-gradient(at top left, #0658f6 20%, #0658f6);
         cursor: pointer;
     }
 
@@ -60,7 +67,7 @@
         width: 25px;
         height: 25px;
         border-radius: 50%;
-        background: radial-gradient(at top left, #2cbcf0 20%, #0a2240);
+        background: radial-gradient(at top left, #84afff 20%, #0658f6);
         cursor: pointer;
         border: none;
     }
@@ -82,9 +89,9 @@
         display: inline-block;
         padding: 10px 20px;
         cursor: pointer;
-        border: 1px solid #2b426d;
+        border: 1px solid #0658f6;
         background-color: #ffffff;
-        color: #02375a;
+        color: #0658f6;
         border-radius: 15px;
         transition: all ease 0.2s;
         text-align: center;
@@ -94,12 +101,13 @@
         font-size: 13px;
         margin: 5px;
         box-shadow: 0 0 25px -15px #000000;
+	    font-family: poppins;
     }
 
     .button-group input[type="radio"]:checked + label {
-        background-color: #02375a;
+        background-color: #0658f6;
         color: #ffffff;
-        border: 1px solid #2b426d;
+        border: 0 solid #0658f6;
     }
 
     fieldset {
@@ -109,8 +117,8 @@
 
     div h1 {
         font-size: 16px;
-        font-family: sans-serif;
-        color: #0a2240;
+        font-family: poppins;
+        color: #ffffff;
         margin: 14px 0;
     }
 
@@ -164,8 +172,9 @@
 	</div>
 	<!-- Recuadro de información -->
 	<div
-			style="display: flex; width: 90%; text-align: center; background-color: #f9f7f7; flex-direction: column;
-			 margin: 15px auto; border: 1px solid black;">
+			style="display: flex; width: 90%; text-align: center; background-color: #0658f6; flex-direction: column;
+			 margin: 15px auto; border: 0 solid black; color: #ffffff; font-weight: bold; font-family: poppins;
+			 border-radius: 15px;">
 		<div style="display: flex">
 			<div class="totales">
 				<h1>Total a pagar*</h1>
@@ -189,41 +198,8 @@
 		</div>
 	</div>
 	<!-- formularios -->
-	<div>
-		<h1 style="display: block; text-align: center; color: #0d2240; font size: 30px; font-family: sans-serif;">
-			Déjanos tus datos y nos estaremos comunicando contigo en menos de 24 horas</h1>
-		<div>
-			<span><strong>Selecciona la empresa en la que trabajas</strong></span>
-			<label for="empresa">
-				<select name="empresa" id="empresa" required>
-					<option value="0">Selecciona</option>
-					<option value="17">BIOSINSA</option>
-					<option value="16">ESTADO DE QUINTANA ROO</option>
-					<option value="21">ESTADO DE SONORA</option>
-					<option value="11">INDUSTRIAS CAZEL</option>
-					<option value="9">MUNICIPIO DE AHOME</option>
-					<option value="1">MUNICIPIO DE DURANGO</option>
-					<option value="12">SEED DURANGO</option>
-					<option value="20">TRANSPORTES CAZEL</option>
-					<option value="0">Otra</option>
-					<!--	--><?php
-						/*				include ( '../conexion.php' );
-										$ResEmpresas = mysqli_query ( $conn, "SELECT Id, Nombre FROM empresas WHERE Simulador = 1 ORDER BY Nombre ASC" );
-										while ( $RResE = mysqli_fetch_array ( $ResEmpresas ) ) {
-											echo '<option value="'.$RResE[ "Id" ].'">'.$RResE[ "Nombre" ].'</option>';
-										}
-									*/ ?>
-				</select>
-			</label>
-			<span>Por favor espera a que cargue el formulario</span>
-		</div>
-	</div>
-	<script type="text/javascript" src="https://api.clientify.net/web-marketing/superforms/script/183873.js"></script>
-	<div id="divFrame" style="display: none">
-		<iframe id="formularioFrame" name="formularioFrame" style="width: 100%;"></iframe>
-	</div>
-	<input type="submit" name="enviar" id="enviar"/>
-	
+
+
 </form>
 <script type="text/javascript">
 	$(document).ready(function () {
@@ -285,7 +261,7 @@
 		$("#empresa").on("change", function () {
 			console.log(this.value);
 		});
-		$('#formSimulador').on('submit', function (e) {
+		$("#formSimulador").on("submit", function (e) {
 			e.preventDefault();
 		});
 	});

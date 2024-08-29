@@ -22,6 +22,7 @@
 	$routes->add ( '/', 'SimuladorController::index' /**@uses \App\Controllers\SimuladorController::index * */ );
 	$routes->add ( 'biosinsa', 'SimuladorController::biosinsa' /**@uses \App\Controllers\SimuladorController::biosinsa * */ );
 	$routes->add ( 'displayForm/(:num)', 'SimuladorController::displayForm/$1' /**@uses \App\Controllers\SimuladorController::displayForm * */ );
+	$routes->add ( 'simulatorAlone', 'SimuladorController::alone' /**@uses \App\Controllers\SimuladorController::alone * */ );
 	//====================================||   POST  ||====================================
 	$routes->add ( 'toSignIn', 'SigninController::signIn' /**@uses \App\Controllers\SigninController::signIn * */ );
 	$routes->add ( 'saveForm', 'SimuladorController::saveFormData' /**@uses \App\Controllers\SimuladorController::saveFormData	 * * */ );

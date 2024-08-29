@@ -2,9 +2,7 @@
 	
 	namespace App\Controllers;
 	
-	use App\Controllers\BaseController;
 	use CodeIgniter\HTTP\RedirectResponse;
-	use CodeIgniter\HTTP\ResponseInterface;
 	
 	class SimuladorController extends BaseController {
 		private array $formularios = [
@@ -36,13 +34,22 @@
 				'session' => TRUE,
 				'title'   => "{$this->formularios[$number][1]}" ] );
 		}
-		public function saveFormData () {
+		public function saveFormData (): bool|array|RedirectResponse {
 			if ( $data = $this->verifyRules ( 'POST', $this->request, NULL ) ) {
 				return ( $data );
 			}
 			$input = $this->getRequestInput ( $this->request );
 			$this->environment ( $input );
 			createLog ( "formularios", json_encode ( $input ) );
-			return redirect()->to ( "displayForm/{$input['origen']}", 301,'location'  );
+			return redirect ()->to ( "displayForm/{$input['origen']}", 301, 'location' );
+		}
+		
+		public function alone (): string|RedirectResponse {
+			if ( $this->validateSession () ) {
+				return view ( 'simuladorAlone', [ 'session' => TRUE, 'title' => 'Simulador' ] );
+				/*$data = [ 'main' => view ( 'simulador', [ 'session' => TRUE ] ), 'title' => 'Simulador' ];
+				return view ( 'plantilla', $data );*/
+			}
+			return redirect ()->route ( 'signin' );
 		}
 	}
