@@ -48,7 +48,7 @@
         height: 23px;
         background-size: 0 100% !important;
         border-radius: 15px;
-        background: rgba(255, 255, 255, 0.73) linear-gradient(#78a6ff, #0658f6) no-repeat;
+        background: rgba(225, 217, 255, 0.73) linear-gradient(#78a6ff, #0658f6) no-repeat;
         padding: 0;
         border: 1px solid #0658f6;
     }
